@@ -1,8 +1,73 @@
-#RipVanWinkle {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin-top: 20px;
-    background-color: SlateBlue;
-    color: Yellow;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  font-weight: normal;
+  font-family: 'Roboto Mono', monospace;
+  color: #00DD00;
+  background-color: #111111;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.body {
+  height: 100vh;
+
+}
+a {
+  color: #38686A;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 60px;
+  height: 100vh;
+ }
+
+ .sidebar {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   border-right: solid #666666 1px;
+   padding-right: 2em;
+
+ }
+
+ #my-pic {
+   border-radius: 50%;
+   max-height: 350px;
+   max-width: 350px;
+
+ }
+
+
+.content {
+ flex: 3;
+ padding-left: 2em;
+ padding-right: 2em;
+}
+
+.content-box {
+  padding: 1em;
+  margin: 1em;
+  border: #666666 solid 1px;
+
+}
+
+@media only screen and (max-width: 1250px) {
+
+  .wrapper {
+    flex-direction: column;
   }
+  .sidebar {
+    border: none;
+    border-bottom: #666666 solid 1px;
+  }
+}
